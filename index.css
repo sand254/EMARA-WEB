@@ -127,7 +127,9 @@ img {
   width: 300px;
   max-height: 100vh;
 }
-
+.rooms {
+  text-align: center;
+}
 @media only screen and (max-width: 768px) {
   .content {
     flex-direction: column;
@@ -138,7 +140,6 @@ img {
     max-height: auto;
   }
 }
-
 @media only screen and (max-width: 480px) {
   .navbar {
     flex-direction: column;
