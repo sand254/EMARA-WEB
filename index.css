@@ -42,6 +42,7 @@ body {
 .navbar a:hover {
   color: #ccc;
 }
+
 .mySlides {
   display: none;
 }
@@ -112,24 +113,48 @@ img {
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .about h1 {
   text-align: center;
 }
+
 .about img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 .content {
   display: flex;
 }
+
 .content img {
   width: 300px;
   max-height: 100vh;
 }
+
 .rooms {
+  padding: 4px;
+  margin: 4px;
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2);
+}
+.rooms h1 {
   text-align: center;
 }
+.room {
+  display: flex;
+}
+.card {
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2);
+  max-width: 480px;
+  margin: 10px;
+  font-family: arial;
+}
+.card img {
+  width: 350px;
+  height: 300px;
+}
+
 @media only screen and (max-width: 768px) {
   .content {
     flex-direction: column;
@@ -138,6 +163,9 @@ img {
   .content img {
     width: 100%;
     max-height: auto;
+  }
+  .room {
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 480px) {
