@@ -234,6 +234,8 @@ h1 {
   color: #f4d03f;
 }
 
+/* /phones/ */
+
 @media only screen and (max-width: 768px) {
   .content {
     flex-direction: column;
@@ -251,7 +253,7 @@ h1 {
   .navbar {
     display: none;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .navbar a {

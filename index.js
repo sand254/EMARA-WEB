@@ -1,4 +1,4 @@
-const icon = document.getElementById("check-icon");
+const icon = document.querySelector(".check-icon");
 const nav = document.querySelector(".navbar");
 let slideIndex = 0;
 showSlides();
@@ -21,3 +21,11 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+icon.addEventListener("click", function () {
+  if ((nav.style.display = "none")) {
+    nav.style.display = "flex";
+  } else {
+    nav.style.display = " none";
+  }
+});
