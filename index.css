@@ -234,6 +234,13 @@ h1 {
   color: #f4d03f;
 }
 
+.booking-section{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 100%;
+  height: 100vh;
+}
+
 /* /phones/ */
 
 @media only screen and (max-width: 768px) {
