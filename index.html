@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EMARA RESORT</title>
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="primary.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -129,56 +131,71 @@
       <img src="images/banner-1.jpg" alt="book image">
     </div> -->
     <div class="form-booking-holder">
-      <form action="" method="get" class="form-control booking-form">
+      <form class="form-control booking-form">
         <div class="mb-3">
           <label for="">Full Name</label>
-          <input class="form-control" type="text" aria-label="default input example">
+          <input class="form-control data_input" name="name" type="text" aria-label="default input example" />
         </div>
 
         <div class="mb-3">
           <label class="form-label">Email address</label>
-          <input type="email" class="form-control" placeholder="name@example.com">
+          <input type="email" name="email" class="form-control data_input" placeholder="name@example.com" />
         </div>
         <div class="mb-3">
           <label class="form-label">Phone Number</label>
-          <input type="number" class="form-control">
+          <input type="number" name="phone" class="form-control data_input" />
         </div>
         <div class="date-divider mb-3">
-
           <div class="mb-3">
             <label class="form-label">Check in date</label>
-            <input type="date" class="form-control">
+            <input type="date" name="check_in_date" class="form-control data_input" />
           </div>
 
           <div class="mb-3">
             <label class="form-label">Check out date</label>
-            <input type="date" class="form-control">
+            <input type="date" name="check_out_date" class="form-control data_input" />
           </div>
-
         </div>
 
         <div class="date-divider mb-3">
-
           <div class="mb-3">
             <label class="form-label">Number of kids</label>
-            <input type="number" class="form-control">
+            <input type="number" name="number_of_kids" class="form-control data_input" />
           </div>
 
           <div class="mb-3">
-            <label class="form-label">NUmber of adults</label>
-            <input type="number" class="form-control">
+            <label class="form-label">Number of adults</label>
+            <input type="number" name="number_of_adults" class="form-control data_input" />
           </div>
-
         </div>
 
         <button type="button" class="book-button">Book</button>
-
-
       </form>
     </div>
   </section>
 
-  <script src="index.js"></script>
+  <section class="overlay">
+    <div class="container alert-box">
+      <h1>Submission Confirmation</h1>
+      <p>Your submission is under the process of being sent.</p>
+      <div class="loading-spinner"></div>
+      <p>Please wait for a moment...</p>
+    </div>
+    <div class="container box-error">
+      <h1>Submission Failed</h1>
+      <p>Your submission failed.</p>
+      <p class="error_box_text"></p>
+      <button class="cancel_box">Cancel</button>
+    </div>
+      <div class="container box-success">
+        <h1>Submission Successfully</h1>
+        <p><i class='bx bx-check-circle'></i></p>
+        <p class="error_box_text"></p>
+        <button class="cancel_box cancel_succes_box">Cancel</button>
+      </div>
+  </section>
+
+  <script type="module" src="index.js"></script>
 </body>
 
 </html>
