@@ -74,13 +74,13 @@ class SendProc
         $mailer->isSMTP();
         $mailer->Host = "smtp.gmail.com";
         $mailer->SMTPAuth = true;
-        $mailer->Username = 'ndegwavincent7@gmail.com';
-        $mailer->Password = 'feulzpogdvsvnidj';
+        $mailer->Username = 'kennedymwaniki089@gmail.com';
+        $mailer->Password = 'gtromfgmyfndcgoy';
         $mailer->Port = 587;
         $mailer->SMTPSecure = "tls";
 
         $mailer->isHTML(true);
-        $mailer->setFrom("ndegwavincent7@gmail.com", "Booking");
+        $mailer->setFrom("kennedymwaniki089@gmail.com", "Emarah resort");
         $mailer->Subject = $this->obj->name . " ,booking";
 
         $htmlFile = file_get_contents("./messages/booking.php");
@@ -97,7 +97,7 @@ class SendProc
         );
         $htmlReplace = str_replace(array_keys($replacement), array_values($replacement), $htmlFile);
         $mailer->Body = $htmlReplace;
-        $mailer->addAddress("vincentndungu393@gmail.com");
+        $mailer->addAddress("kennedymwaniki089@gmail.com");
 
         try {
             $mailer->send();
