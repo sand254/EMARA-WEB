@@ -8,7 +8,6 @@
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  position: relative;
   /* background-color: #00a9ff; */
 }
 
@@ -16,7 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 15px;
+  padding: 15px;
   margin: 0;
   background-color: #0e21a0;
   color: white;
@@ -344,21 +343,36 @@ h5 {
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 480px) {
+/* Media Query for Responsive Layout */
+@media screen and (max-width: 768px) {
   .navbar {
     display: none;
+    top: 300px; /* Adjust as per your design */
+    width: 60%; /* Give half of the screen width */
+    height: 100%; /* Take full height of the screen */
+    background-color: #0e21a0;
     flex-direction: column;
-    align-items: center;
+    padding: 20px;
+    z-index: 1000;
   }
 
   .navbar a {
-    margin-left: 0;
-    margin-top: 10px;
+    margin: 10px 0;
   }
+
   .icon-menu {
-    display: flex;
+    display: block; /* Display the hamburger icon */
+  }
+
+  .check-icon {
+    display: none; /* Hide the checkbox for the hamburger icon */
+  }
+
+  .check-icon:checked ~ .navbar {
+    display: flex; /* Display the navigation links when the hamburger icon is checked */
   }
 }
+
 /* .hidden { */
 /* display: none; */
 /* } */

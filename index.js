@@ -36,13 +36,24 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-icon.addEventListener("click", function () {
-  if ((nav.style.display = "none")) {
+icon.addEventListener("change", function () {
+  if (this.checked) {
+    // If the checkbox is checked, display the navbar
     nav.style.display = "flex";
   } else {
-    nav.style.display = " none";
+    // If the checkbox is unchecked, hide the navbar
+    nav.style.display = "none";
   }
 });
+
+//
+// icon.addEventListener("click", function () {
+// if ((nav.style.display = "none")) {
+// nav.style.display = "flex";
+// } else {
+// nav.style.display = " none";
+// }
+// });
 
 bookingButton.addEventListener("click", () => {
   let formData = {};
