@@ -347,17 +347,18 @@ h5 {
 @media screen and (max-width: 768px) {
   .navbar {
     display: none;
-    top: 300px; /* Adjust as per your design */
+    position: absolute;
+    top: 60px; /* Adjust as per your design */
     width: 60%; /* Give half of the screen width */
-    height: 100%; /* Take full height of the screen */
+    height: 45%; /* Take full height of the screen */
     background-color: #0e21a0;
     flex-direction: column;
-    padding: 20px;
+    padding: 15px;
     z-index: 1000;
   }
 
   .navbar a {
-    margin: 10px 0;
+    margin: 10px;
   }
 
   .icon-menu {
