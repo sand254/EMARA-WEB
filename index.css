@@ -353,12 +353,11 @@ h5 {
     height: 45%; /* Take full height of the screen */
     background-color: #0e21a0;
     flex-direction: column;
-    padding: 15px;
     z-index: 1000;
   }
 
   .navbar a {
-    margin: 10px;
+    margin: 10px 0;
   }
 
   .icon-menu {
