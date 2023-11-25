@@ -74,13 +74,13 @@ class SendProc
         $mailer->isSMTP();
         $mailer->Host = "smtp.gmail.com";
         $mailer->SMTPAuth = true;
-        $mailer->Username = 'kennedymwaniki089@gmail.com';
-        $mailer->Password = 'gtromfgmyfndcgoy';
+        $mailer->Username = 'eunie.nganga20@gmail.com';
+        $mailer->Password = 'rhngwynjpnsjcnvt';
         $mailer->Port = 587;
         $mailer->SMTPSecure = "tls";
 
         $mailer->isHTML(true);
-        $mailer->setFrom("kennedymwaniki089@gmail.com", "Emarah resort");
+        $mailer->setFrom("eunie.nganga20@gmail.com", "Emarah resort");
         $mailer->Subject = $this->obj->name . " ,booking";
 
         $htmlFile = file_get_contents("./messages/booking.php");
