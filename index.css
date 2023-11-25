@@ -44,8 +44,8 @@ body {
   color: #ccc;
 }
 .icon-menu {
-  --gap: 5px;
-  --height-bar: 2.5px;
+  --gap: 8px;
+  --height-bar: 4.5px;
   --pos-y-bar-one: 0;
   --pos-y-bar-three: 0;
   --scale-bar: 1;
