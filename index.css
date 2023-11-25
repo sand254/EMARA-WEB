@@ -350,7 +350,7 @@ h5 {
     position: absolute;
     top: 60px; /* Adjust as per your design */
     width: 60%; /* Give half of the screen width */
-    height: 45%; /* Take full height of the screen */
+    height: 50%; /* Take full height of the screen */
     background-color: #0e21a0;
     flex-direction: column;
     z-index: 1000;
